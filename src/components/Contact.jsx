@@ -25,7 +25,7 @@ const Contact = () => {
                             </h3>
                             <button className="contact__option__info contact__option__info__btn">
                                 <a href="https://www.instagram.com/grantwritingessentials/" target="_blank" className="contact__option__info__link">
-                                    <FontAwesomeIcon icon={faInstagram} />
+                                    <FontAwesomeIcon icon={faInstagram} className="contact__option__info__icon" />
                                 </a>    
                             </button>
                         </div>

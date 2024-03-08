@@ -9,6 +9,7 @@ import Banner from './components/Banner';
 import Goals from './components/Goals';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <Goals />
       <Banner />
       <Services />
-      <Contact />
+      <Footer />
     </>
   )
 }

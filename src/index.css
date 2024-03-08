@@ -6,17 +6,23 @@
   padding: 0px;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
-  color: #2d2e32;
 }
 
+/*
 body {
   border: 20px solid var(--primary);
-  background-image: url(assets/background.webp);
 }
+*/
 
 /* Global Styles */
 :root {
-  --primary: #8992B9;
+  --primary: #143892;
+  --secondary: #ff9900;
+  --text: #2d2e32; 
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  color: var(--text);
 }
 
 .container {
@@ -43,6 +49,16 @@ button:hover {
 
 .primary-color {
   color: var(--primary);
+}
+
+.secondary-color {
+  color: var(--secondary);
+}
+
+/* Separator */
+
+.separator {
+  
 }
 
 /* Nav */
@@ -109,18 +125,18 @@ button:hover {
   background-color: #93a1db;
 }
 
-/* home */
+/* Home */
 #home {
   height: 100vh;
   width: 100%;
-  
+  background-color: hsl(40 20% 95%)
 }
 
 .home__row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 150px;
 }
 
 .home__img__wrapper {
@@ -135,7 +151,7 @@ button:hover {
   z-index: 1;
   object-fit: cover;
   position: relative;
-  border: 3px solid var(--primary);
+  border: 3px solid var(--secondary);
   animation: morph 8s ease-in-out infinite;
   user-select: none;
 }
@@ -161,10 +177,12 @@ button:hover {
 
 .home__content__title {
   font-size: 36px;
+  color: var(--secondary);
 }
 
 .home__content__subtitle {
   font-size: 28px;
+  color: var(--text)
 }
 
 .home__content__infos {
@@ -179,7 +197,9 @@ button:hover {
   display: flex;
   gap: 16px;
   align-items: center;
-  color: red
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .home__content__info__icon {
@@ -208,9 +228,9 @@ button:hover {
 }
 
 /* About */
-/* #about {
-  border: 20px solid var(--primary);
-} */
+#about .container {
+  padding: 5px 0;
+}
 
 .about__row {
   display: flex;
@@ -242,11 +262,13 @@ button:hover {
 
 .about__who__title {
   font-size: 36px;
+  color: var(--secondary);
 }
 
 .about__content__img__wrapper {
   width: 500px;
   position: relative;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 
 .about__content__img__wrapper::before {
@@ -254,7 +276,7 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
   top: 24px;
   right: 24px;
   z-index: -1;
@@ -265,7 +287,7 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
   bottom: 24px;
   left: 24px;
   z-index: 1;
@@ -308,10 +330,6 @@ button:hover {
 /* Goals */
 
 .goals__row {
-
-}
-
-.goals__goals {
   display: flex;
   gap: 20px;
 }
@@ -328,6 +346,7 @@ button:hover {
 .goals__goal__title {
   font-size: 32px;
   font-weight: 800;
+  color: var(--secondary)
 }
 
 .goals__goal__img__wrapper {
@@ -349,6 +368,10 @@ button:hover {
 }
 
 /* Services */
+#services {
+  background-color: #f8f8f8;
+}
+
 .services__row {
   display: flex;
   gap: 100px;
@@ -360,6 +383,7 @@ button:hover {
   height: 400px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   position: relative;
+  z-index: 1;
 }
 
 .services__img__wrapper::before {
@@ -402,6 +426,7 @@ button:hover {
 
 .services__content__title {
   font-size: 32px;
+  color: var(--secondary);
 }
 
 .services__content__btns {
@@ -470,7 +495,10 @@ button:hover {
 .services__btn__wrapper {
   display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 48px;
+  max-width: 300px;
 }
 
 .services__btn {
@@ -484,6 +512,8 @@ button:hover {
   box-shadow: 0px 10px 15px 0px #8992B940;
   cursor: pointer;
   transition: 200ms ease-in;
+  width: 100%;
+  height: 100%;
 }
 
 .services__btn:hover {
@@ -514,7 +544,7 @@ button:hover {
 }
 
 .contact__option__title {
-  background-color: #93a1db;
+  background-color: var(--secondary);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   font-size: 28px;
   padding: 8px 0px;
@@ -526,7 +556,6 @@ button:hover {
 
 .contact__option__info {
   font-size: 20px;
-  color: white;
   font-weight: 600;
   height: 100%;
   text-shadow: 1px 1px 2px #2d2d2d;
@@ -536,7 +565,6 @@ button:hover {
   margin: 0 auto;
   width: 50px;
   border-radius: 8px;
-
 }
 
 .contact__option__info__link {
@@ -544,3 +572,123 @@ button:hover {
   height: 100%;
 }
 
+/* Footer */
+
+#footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  margin-top: 50px;
+  z-index: 89999999;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}

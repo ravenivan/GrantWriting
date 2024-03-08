@@ -8,7 +8,7 @@ const Banner = () => {
                     Our <span className="primary-color">three workshop series</span> specialty services!
                 </h2>
                 <h3 className="banner__subtitle">
-                    Teaching <span className="primary-color">grant writing</span> success in small dosage!
+                    Teaching <span className="secondary-color">grant writing</span> success in small dosage!
                 </h3>
             </div>
         </section>
