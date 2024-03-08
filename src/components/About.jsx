@@ -1,10 +1,12 @@
 import React from 'react';
 import Logo from '../assets/Logo-clear.png'
 import AboutImg from '../assets/About-img.png'
+import Blob from './ui/Blob';
 
 const About = () => {
     return (
         <section id="about">
+            <Blob className="blob-about" />
             <div className="container about__container">
                 <div className="row about__row">
                     <div className="about__img__wrapper">

@@ -10,15 +10,14 @@ const Nav = () => {
                 </a>
                 <div className="nav__links">
                     <a href="" className="nav__link">Home</a>
-                    <a href="" className="nav__link">Who We Are</a>
-                    <a href="" className="nav__link">Our Mission</a>
-                    <a href="" className="nav__link">Our Purpose</a>
+                    <a href="" className="nav__link">About Us</a>
                     <a href="" className="nav__link">Services</a>
-                    <a href="" className="nav__link">Additional</a>
+                    <a href="" className="nav__link">Contact</a>
+                    <a href="" className="nav__btn__wrapper">
+                        <button className="nav__btn">Sign up now!</button>
+                    </a>
                 </div>
-                <a href="" className="nav__btn__wrapper">
-                    <button className="nav__btn">Sign up now!</button>
-                </a>
+
             </div>
         </nav>
     );

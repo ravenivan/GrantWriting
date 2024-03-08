@@ -2,10 +2,12 @@ import React from 'react';
 import Woman from '../assets/MPL5.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown, faClipboard, faEnvelope, faLocationDot, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import Blob from './ui/Blob';
 
 const Home = () => {
     return (
         <section id="home">
+            <Blob className="blob-header" />
             <div className="container">
                 <div className="row home__row">
                     <div className="home__img__wrapper">

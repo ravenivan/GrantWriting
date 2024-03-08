@@ -2,12 +2,11 @@ import React from 'react';
 import Image1 from '../assets/Goals1-img.jpg';
 import Image2 from '../assets/Goals2-img.webp';
 import Image3 from '../assets/Goals3-img.avif'
-import Separator from './ui/Separator';
 
 const Goals = () => {
     return (
         <section id="goals">
-            <div className="container">
+            <div className="container goals__container">
                 <div className="row goals__row">
                     <div className="goals__goal">
                         <h3 className="goals__goal__title">
