@@ -2,18 +2,18 @@ import React from 'react';
 import Image from '../assets/About-img.png';
 import { useState } from 'react'
 import ServicesSeries from './ui/ServicesSeries';
+import ServiceImage from '../assets/Services-img3.png'
 
 
 const Services = () => {
     const [seriesNum, setSeriesNum] = useState("1");
-    console.log(seriesNum)
 
     return (
         <section id="services">
             <div className="container">
                 <div className="row services__row">
                     <div className="services__img__wrapper">
-                        <img src={Image} alt="" className="services__img" />
+                        <img src={ServiceImage} alt="" className="services__img" />
                     </div>
                     <div className="services__content">
                         <h2 className="services__content__title">
@@ -58,7 +58,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <a href="" className="services__btn__wrapper">
+                <a href="https://form.jotform.com/mrslawson/business-essentials_registration" target="_blank" className="services__btn__wrapper">
                     <button className="services__btn">Sign up now!</button>
                 </a>
             </div>

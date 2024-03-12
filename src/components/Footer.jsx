@@ -25,12 +25,12 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faInstagram} />
                 </a></li>
             </ul>
-            <ul className="menu">
-                <li className="menu__item"><a className="menu__link" href="#">Home</a></li>
-                <li className="menu__item"><a className="menu__link" href="#">About</a></li>
-                <li className="menu__item"><a className="menu__link" href="#">Services</a></li>
-                <li className="menu__item"><a className="menu__link" href="#">Team</a></li>
-                <li className="menu__item"><a className="menu__link" href="#">Contact</a></li>
+            <ul className="footer__menu">
+                <li className="footer__menu__item"><a className="footer__menu__link" href="#">Home</a></li>
+                <li className="footer__menu__item"><a className="footer__menu__link" href="#">About</a></li>
+                <li className="footer__menu__item"><a className="footer__menu__link" href="#">Services</a></li>
+                <li className="footer__menu__item"><a className="footer__menu__link" href="#">Team</a></li>
+                <li className="footer__menu__item"><a className="footer__menu__link" href="#">Contact</a></li>
 
             </ul>
             <p>&copy;2024 Grant Writing Essentials | All Rights Reserved</p>

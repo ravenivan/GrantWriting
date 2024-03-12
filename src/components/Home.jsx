@@ -37,10 +37,10 @@ const Home = () => {
                                 <FontAwesomeIcon icon={faLocationDot} className="home__content__info__icon" />
                                 <span>Services offered in-person and virtually on Zoom</span>
                             </div>
-                            <div className="home__content__info">
+                            <a href="https://form.jotform.com/mrslawson/business-essentials_registration" target="_blank" className="home__content__info">
                                 <FontAwesomeIcon icon={faClipboard} className="home__content__info__icon" />
                                 <span>Sign-up form</span>
-                            </div>
+                            </a>
                         </div>
                         <a href="#about" className="home__scroll">
                             <FontAwesomeIcon icon={faAngleDoubleDown} />
