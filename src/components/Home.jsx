@@ -1,7 +1,7 @@
 import React from 'react';
-import Woman from '../assets/MPL5.jpeg'
+import Logo from '../assets/Logo-clear.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleDown, faClipboard, faEnvelope, faLocationDot, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleDown, faAngleRight, faCheckCircle, faClipboard, faEnvelope, faLocationDot, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 import Blob from './ui/Blob';
 
 const Home = () => {
@@ -10,36 +10,28 @@ const Home = () => {
             <Blob className="blob-header" />
             <div className="container">
                 <div className="row home__row">
-                    <div className="home__img__wrapper">
-                        <img src={Woman} alt="" className="home__img" />
-                    </div>
                     <div className="home__content">
                         <h2 className="home__content__subtitle">
-                            Capability Statement
+                            Learn how to write grants
                         </h2>
                         <h1 className="home__content__title">
-                            Grant Writing Essentials
+                            Welcome to Grant Writing Essentials
                         </h1>
-                        <div className="home__content__infos">
-                            <div className="home__content__info">
-                                <FontAwesomeIcon icon={faUser} color="green"  className="home__content__info__icon" /> 
-                                <span>Marlyn Paris-Lawson. Facilitator.</span>
-                            </div>
-                            <div className="home__content__info">
-                                <FontAwesomeIcon icon={faPhone} className="home__content__info__icon" />
-                                <span>754 - 248 - 9775</span>
-                            </div>
-                            <div className="home__content__info">
-                                <FontAwesomeIcon icon={faEnvelope} className="home__content__info__icon" />
-                                <span>grantwritingessentials@gmail.com</span>
-                            </div>
-                            <div className="home__content__info">
-                                <FontAwesomeIcon icon={faLocationDot} className="home__content__info__icon" />
-                                <span>Services offered in-person and virtually on Zoom</span>
-                            </div>
-                            <a href="https://form.jotform.com/mrslawson/business-essentials_registration" target="_blank" className="home__content__info">
-                                <FontAwesomeIcon icon={faClipboard} className="home__content__info__icon" />
-                                <span>Sign-up form</span>
+                        <p className="home__content__para">
+                            Teaching grant writing success in small dosage! Understand the common mistakes and challenges. Get funding and so much more.
+                        </p>
+                        <div className="home__content__btns">
+                            <a href="">
+                                <button className="home__content__btn home__content__sign-up">
+                                    Sign up
+                                    <FontAwesomeIcon icon={faCheckCircle} />
+                                </button>
+                            </a>
+                            <a href="#about">
+                                <button className="home__content__btn home__content__learn">
+                                    Learn More
+                                    <FontAwesomeIcon icon={faAngleRight} className="home__content__learn__icon" />
+                                </button>
                             </a>
                         </div>
                         <a href="#about" className="home__scroll">
@@ -47,6 +39,10 @@ const Home = () => {
                             <FontAwesomeIcon icon={faAngleDoubleDown} />
                         </a>
                     </div>
+                    <div className="home__img__wrapper">
+                        <img src={Logo} alt="" className="home__img" />
+                    </div>
+
                 </div>
             </div>
         </section>

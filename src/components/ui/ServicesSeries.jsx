@@ -18,7 +18,7 @@ const ServicesSeries = ( {number} ) => {
                         Learn the ten most common mistakes grant writers make and why
                     </li>
                     <li className="services__content__text__list__para">
-                        Process the five "W's" and the "H"
+                        Process the five "<span className="primary-color">W's</span>"" and the "<span className="primary-color">H</span>"
                     </li>
                     <li className="services__content__text__list__para">
                     Familiarize with the essential parts of a grant
